@@ -1,0 +1,99 @@
+*,html,body{
+    margin:0;
+    padding: 0;
+}
+body{
+    color: #4d4e53;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 100%;
+    border-right:0.5px solid rgba(0, 22, 22, 0.4);
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    font: 20px Work Sans;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin: 15px auto auto auto;
+}
+
+#navbar li {
+    display: list-item;
+    color: #4d4e53;
+    border-top:1px solid  rgba(0, 22, 22, 0.4) ;
+    list-style: none;
+    padding:10px;
+    width: 100%;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 450px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.header-main-doc{
+    padding:15px;
+    display: block;
+    text-align: left;
+    margin:0;
+}
+
+.article-main-doc{
+    margin:auto 20px;
+}
+
+.list-main-doc{
+    margin:auto 20px;
+}
+
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* Media Query */
+/* Phone Size */
+@media only screen and (max-width: 600px) {
+    .article-main-doc{
+        font:10px Work Sans;
+    }
+}
+

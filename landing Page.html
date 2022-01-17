@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contanier">
+        <header id="header" class="header-sec">
+            <img src="assets/logo/logo.png" alt="" id="header-img">
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-list"><a class="nav-link" href="#footer">Service</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#video-blog">Blog</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#video">About</a></li>
+                    <li class="nav-list"><a class="nav-link" href="#form">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-head">
+            <div class="video-tag">
+                <video id="video" width="100%" height="100%"  poster="assets/images/video_poster.png" controls>
+                    <source src="assets/video/videoplayback.mp4" type="video/mp4"></source>
+                </video>
+            </div>
+        </div>
+
+        <div id="video-blog"class="video-desc">
+            <h4 class="video-content">Recent work</h4>
+            <h2 class="video-content">Yadunandan TVC DIRECTOR'S CUT</h2>
+            <p class="video-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae et </p>
+            <button type="button" class="btn-View">View more</button>
+        </div>
+
+        <div class="form-sec">
+            <form  id="form" action="https://www.freecodecamp.com/email-submit)">
+                <h1 id="form-title"> For the art of cinematic universe</h1>
+                <p id="form-description"> Welcome to the Jash Gandhi editing; addicted to editing? You’re just one click away.
+                    Sign up for some free sessions
+                    </p>
+
+                <div class="input-grp">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required  pattern=".+@gmail\.com" class="form-control">
+                    <input type="submit" id="submit" class="submit-button"></input>
+                </div>
+            
+            </form>
+        </div>
+
+        <div class="footer" id="footer">
+            <p>
+                Copyright © 2021 | Jash Gandhi | All rights reserved.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

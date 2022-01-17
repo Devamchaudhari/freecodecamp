@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+*,html,body {
+    padding: 0;
+    margin: 0;
+}
+.main-head{
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    position:fixed;
+}
+#header-img{
+    margin:30px;
+}
+
+#nav-bar ul{
+    display:flex;
+    margin:20px;
+    justify-content: space-between;
+    list-style-type: none;
+    font: 20px Work Sans;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list{
+    flex-direction: row;
+    padding: 32px;
+    color:white;   
+}
+
+.video-tag{
+    width: 100%;
+    z-index: 0;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.video-desc{
+    position: relative;
+    color: white;
+    font-family: Work Sans;
+    display: block;
+    padding: 10%;
+}
+
+.video-content{
+    line-height: 50px;
+
+}
+
+h2{
+    font-size: 35px;
+}
+
+.btn-View{
+    border: 2px solid white;
+    width:15%;
+    margin:20px auto auto auto;
+    font: 22px Work Sans;
+    height:20%;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+.form-sec{
+    color: white;
+    font-family: Work Sans;
+    padding-left: 10%;
+    display: block;
+}
+
+#form-description{
+    width: 55%;
+    padding-top: 30px;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input-grp{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    display: flex;
+}
+
+.form-control{
+    display: block;
+    width: 20%;
+    height: 2.375rem;
+    color: black;
+    padding: 5px;
+    border:none;
+    margin-top:10px;
+    margin-left: -8px;
+    background-color: white;
+    border-radius:10px;
+}
+
+input::placeholder{
+    color: rgb(139, 139, 139);
+    font: 17px Work Sans;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.submit-button{
+    border: 2px solid white;
+    width:15%;
+    margin:8px auto auto 20px;
+    font: 22px Work Sans;
+    height:20%;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+}
+
+.footer{
+    font: 15px Work Sans;
+    color: white;
+    text-align: center;
+    padding:90px ;
+    font-weight: 600;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .footer{
+        font:10px Work Sans;
+    }
+}

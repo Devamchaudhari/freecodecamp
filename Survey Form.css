@@ -1,0 +1,149 @@
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( 
+115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    height: 100%;
+width: 100%;
+z-index: -1;
+display: block;
+background-size: cover; 
+}
+
+.main{
+     width: 100%;
+     padding: 0;
+     margin-top: 7rem;
+     text-align: center;
+     color: white;
+}
+
+#title{
+    font-weight: 300;
+    font-size: 40px;
+    display: block;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+}
+#description {
+    font-style: italic;
+    font-weight:100;
+    font-family: sans-serif;
+    font-size:20px;
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+#survey-form{
+    background:  rgba(27, 27, 50, 0.8);
+    display: block;
+    padding: 58px;
+    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+    /* margin: auto auto auto 26%; */
+}
+.input-grp{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 0.9rem;
+}
+
+.Checkbox-P{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 0.5rem;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem auto;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.radio-inp{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.clue{
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+.input-checkbox{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+.submit-button{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #37af65;
+    color: inherit;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Media Query */
+/* Phone Size */
+@media only screen and (max-width: 600px) {
+    #title{
+        font-size:10px;
+    }
+}
+
+table{
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+  }
+  
+  p::first-line {
+    color: #0000ff;
+    font-variant: small-caps;
+  }
