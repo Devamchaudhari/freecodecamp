@@ -1,6 +1,9 @@
+@import url("https://fonts.google.com/specimen/Raleway?query=raleway#license");
+
 *,html,body {
     padding: 0;
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
 /* menubar section */
@@ -9,7 +12,6 @@
     justify-content: flex-end;
     position: fixed;
     width: 100%;
-    z-index: 0;
     background:#be3144;
     
 }
@@ -22,12 +24,12 @@
 .nav-list a{
     display: block;
     padding: 25px;
-    font: 1.5vw 'Poppins', sans-serif;
+    font: 20px 'Poppins', sans-serif;
     text-decoration:none;
     color: white;
 }
 
-/* body First Section  */
+/* welcome Section start  */
 #welcome-section{
     display: flex;
     flex-direction: column;
@@ -40,12 +42,289 @@
 
 #welcome-section h1{
     color: white;
-    font: 4vw  'Raleway', sans-serif;;
+    font: 70px  'Raleway', sans-serif;
     font-weight:600;
 }
 
 #welcome-section p{
     color: #be3144;
-    font: 2.5vw  'Raleway', sans-serif;;
-    font-weight:lighter;
+    font: 40px  'Raleway', sans-serif;;
+    font-weight:200;
+}
+
+/* welcome section end */
+
+/* project section start */
+#projects{
+    text-align: center;
+    background-color: #45567d;
+    padding: 3rem 2rem;
+}
+ 
+.h2-section{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    padding-bottom:35px ;
+}
+
+.project-section-header {
+    font: 3vw 'Raleway',sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color:white;
+    padding:10px;
+    border-bottom: 2px solid white;
+}  
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+
+.project {
+    background:#303841;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    text-decoration: none;
+    color:white;
+}
+.project-image {
+    height: calc(100% - 4.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title{
+    font:25px 'Raleway',sans-serif;
+    padding: 20px;
+}
+
+
+.btn-show{
+    font:25px 'Raleway', sans-serif;
+    text-decoration: none;
+    color:white;
+    background:#303841;
+    padding: 15px;
+    border-radius:15px;
+    
+    font-weight: 600;
+}
+
+.btn-show:hover{
+    background:#be3144;
+    transition: background  0.3s ease-out;
+    
+}
+.btn-show span{
+    font-size:30px;
+    padding:8px;
+}
+/* project section end */
+
+/* contact section start */
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #303841;
+}
+
+#contact-section h1{
+    font:90px 'Raleway', sans-serif;
+    color:white;
+    text-align: center;
+    width: 100%;
+    padding-top: 90px;
+    font-weight:700 ;
+}
+
+#contact-section p{
+    font:22px 'Poppins', sans-serif;
+    color:#ffffff;
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.links-container{
+    padding: 50px 20px;
+    transition: transform 0.3s ease-out;
+}
+
+.links-container li{
+    display:inline-block;
+    list-style-type:none;
+}
+.links-container a{
+    width: 100%;
+    padding: 50px 20px;
+    font:25px 'Poppins', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+
+.links-container li:hover{
+    transform: translateY(8px);
+}
+
+.links-container a i{
+    padding:10px;
+    color:white;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background:#303841;
+    border-top: 4px solid #be3144;
+}
+
+footer p{
+    color: white;
+    font:18px 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+footer p a{
+    color:white;
+    text-decoration:none;
+}
+
+@media all and (max-width:900px) {
+    #welcome-section h1{
+        font-size: 50px;
+    }
+    
+    #welcome-section p{
+        font-size:35px;
+    }
+
+    #contact-section h1{
+        text-align: center;
+        font:68px 'Raleway', sans-serif;
+        font-weight:700;
+    }
+    
+    #contact-section p{
+        font:35px 'Raleway', sans-serif;
+    }
+}
+
+@media all and (max-width:700px) {
+    #contact-section h1{
+        text-align: center;
+        font:57px 'Raleway', sans-serif;
+        font-weight:700;
+    }
+    
+    #contact-section p{
+        font:30px 'Raleway', sans-serif;
+    }
+}
+
+@media all and (max-width:500px) {
+    #contact-section h1{
+        text-align: center;
+        font:40px 'Raleway', sans-serif;
+        font-weight:700;
+    }
+    
+    #contact-section p{
+        font:20px 'Raleway', sans-serif;
+    }
+}
+
+@media all and (max-width:400px) {
+    
+    #welcome-section h1{
+        font-size: 30px;
+    }
+    
+    #welcome-section p{
+        font-size:20px;
+    }
+
+    .nav-list a{
+        font:20px 'Poppins', sans-serif
+    }
+    .project{
+        max-width: 80%;
+    }
+    #contact-section h1{
+        text-align: center;
+        font:35px 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+    #contact-section p{
+        font:20px 'Raleway', sans-serif;
+    }
+    
+    .btn-show{
+        font:16px 'Raleway', sans-serif;
+        font-weight: 600;;
+    }
+    .btn-show span{
+        font:22px 'Raleway', sans-serif;
+        font-weight: 600;;
+    }
+    
+     .links-container {
+            max-width: 66%;
+     }
+}
+
+
+@media all and (max-width:320px) {
+      
+    .nav-list a{
+        font:15px 'Poppins', sans-serif
+    }
+    .project{
+        max-width: 80%;
+    }
+    #contact-section h1{
+        text-align: center;
+        font:25px 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+    #contact-section p{
+        font:15px 'Raleway', sans-serif;
+    }
+
+     .links-container {
+            max-width: 100%;
+            display:grid;
+            grid-template-columns:135px 141px;
+     }
+     
+     .links-container a {
+        font:13px 'Poppins', sans-serif;
+    }
+
+    
+    .btn-show{
+        font:16px 'Raleway', sans-serif;
+        font-weight: 600;;
+    }
+    .btn-show span{
+        font:22px 'Raleway', sans-serif;
+        font-weight: 600;;
+    }
+
+    footer p{
+        font:10px 'Poppins', sans-serif;
+    }
+
 }
